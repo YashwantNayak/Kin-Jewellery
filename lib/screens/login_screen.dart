@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/auth_controller.dart';
 import 'main_navigation_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -19,12 +20,12 @@ class LoginScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back, color: Color(0xFF1A1A1A)),
           onPressed: () => Get.back(),
         ),
-        title: const Text(
-          'KIN',
-          style: TextStyle(
+        title: Text(
+          'Kin',
+          style: GoogleFonts.bodoniModa(
             fontSize: 28,
-            fontWeight: FontWeight.w900,
-            color: Color(0xFF1A1A1A),
+            fontWeight: FontWeight.w500,
+            color: const Color(0xFF1A1A1A),
             letterSpacing: 3,
           ),
         ),
@@ -137,7 +138,7 @@ class LoginScreen extends StatelessWidget {
                                   }
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF2C2C2C),
+                            backgroundColor: const Color.fromARGB(255, 212, 175, 55),
                             disabledBackgroundColor: Colors.grey[400],
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),

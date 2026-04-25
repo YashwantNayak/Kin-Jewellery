@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'main_navigation_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -147,12 +148,12 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 child: Column(
                   children: [
                     // App Logo/Name with premium styling
-                    const Text(
+                    Text(
                       'Kin',
-                      style: TextStyle(
+                      style: GoogleFonts.bodoniModa(
                         fontSize: 72,
                         fontWeight: FontWeight.w300,
-                        color: Color(0xFF1A1A1A),
+                        color: const Color(0xFF1A1A1A),
                         letterSpacing: 8,
                       ),
                     ),
