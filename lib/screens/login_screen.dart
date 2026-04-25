@@ -62,45 +62,45 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  const Text(
+                  Text(
                     'Welcome to Kin',
-                    style: TextStyle(
+                    style: GoogleFonts.bodoniModa(
                       fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF2C2C2C),
+                      fontWeight: FontWeight.w500,
+                      color: const Color(0xFF1A1A1A),
                     ),
                   ),
-                  const SizedBox(height: 12),
-                  const Text(
+                  const SizedBox(height: 0),
+                  Text(
                     'Discover Timeless Elegance',
-                    style: TextStyle(
+                    style: GoogleFonts.bodoniModa(
                       fontSize: 14,
-                      color: Colors.grey,
+                      color: Colors.black,
                     ),
                   ),
                 ],
               ),
               // Middle Content
-              Column(
-                children: [
-                  const Icon(
-                    Icons.card_membership,
-                    size: 80,
-                    color: Color(0xFFD4AF37),
-                  ),
-                  const SizedBox(height: 24),
-                  const Text(
-                    'Curated Jewellery\nfor Every Occasion',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF2C2C2C),
-                      height: 1.5,
-                    ),
-                  ),
-                ],
-              ),
+              // Column(
+              //   children: [
+              //     const Icon(
+              //       Icons.card_membership,
+              //       size: 80,
+              //       color: Color(0xFFD4AF37),
+              //     ),
+              //     const SizedBox(height: 24),
+              //     const Text(
+              //       'Curated Jewellery\nfor Every Occasion',
+              //       textAlign: TextAlign.center,
+              //       style: TextStyle(
+              //         fontSize: 18,
+              //         fontWeight: FontWeight.w600,
+              //         color: Color(0xFF2C2C2C),
+              //         height: 1.5,
+              //       ),
+              //     ),
+              //   ],
+              // ),
               // Login Button
               Obx(
                 () => Column(
