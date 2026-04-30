@@ -96,127 +96,127 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
           ),
         ),
         child: Stack(
-          children: [
-            // Ring image background - right side with low opacity
-            Positioned(
-              right: -40,
-              top: -30,
-              bottom: -30,
-              child: Opacity(
-                opacity: 0.12,
-                child: Transform.scale(
-                  scale: 1.2,
-                  child: Image.asset(
-                    '/ring.png',
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) {
-                      return Container(
-                        color: const Color(0xFFD4AF37).withOpacity(0.1),
-                        child: const Center(
-                          child: Icon(
-                            Icons.diamond,
-                            size: 100,
-                            color: Color(0xFFD4AF37),
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ),
-            ),
-            // Skeleton Content
-            // SafeArea(
-            //   child: Column(
-            //     mainAxisAlignment: MainAxisAlignment.center,
-            //     children: [
-            //       const SizedBox(height: 40),
-            //       // Skeleton icon circle
-            //       _buildSkeletonShimmer(
-            //         child: Container(
-            //           height: 160,
-            //           width: 160,
-            //           decoration: BoxDecoration(
-            //             shape: BoxShape.circle,
-            //             color: Colors.grey[300],
-            //           ),
-            //         ),
-            //       ),
-            //       const SizedBox(height: 50),
-            //       // Skeleton text lines
-            //       Column(
-            //         children: [
-            //           _buildSkeletonShimmer(
-            //             child: Container(
-            //               height: 60,
-            //               width: 150,
-            //               decoration: BoxDecoration(
-            //                 borderRadius: BorderRadius.circular(8),
-            //                 color: Colors.grey[300],
-            //               ),
-            //             ),
-            //           ),
-            //           const SizedBox(height: 16),
-            //           _buildSkeletonShimmer(
-            //             child: Container(
-            //               height: 12,
-            //               width: 100,
-            //               decoration: BoxDecoration(
-            //                 borderRadius: BorderRadius.circular(6),
-            //                 color: Colors.grey[300],
-            //               ),
-            //             ),
-            //           ),
-            //           const SizedBox(height: 24),
-            //           _buildSkeletonShimmer(
-            //             child: Container(
-            //               height: 12,
-            //               width: 120,
-            //               decoration: BoxDecoration(
-            //                 borderRadius: BorderRadius.circular(6),
-            //                 color: Colors.grey[300],
-            //               ),
-            //             ),
-            //           ),
-            //         ],
-            //       ),
-            //       const Spacer(),
-            //       // Skeleton loading animation
-            //       _buildSkeletonShimmer(
-            //         child: Row(
-            //           mainAxisAlignment: MainAxisAlignment.center,
-            //           children: List.generate(
-            //             3,
-            //             (index) => Padding(
-            //               padding: const EdgeInsets.symmetric(horizontal: 7),
-            //               child: Container(
-            //                 width: 8,
-            //                 height: 8,
-            //                 decoration: BoxDecoration(
-            //                   shape: BoxShape.circle,
-            //                   color: Colors.grey[300],
-            //                 ),
-            //               ),
-            //             ),
-            //           ),
-            //         ),
-            //       ),
-            //       const SizedBox(height: 20),
-            //       _buildSkeletonShimmer(
-            //         child: Container(
-            //           height: 12,
-            //           width: 60,
-            //           decoration: BoxDecoration(
-            //             borderRadius: BorderRadius.circular(6),
-            //             color: Colors.grey[300],
-            //           ),
-            //         ),
-            //       ),
-            //       const SizedBox(height: 60),
-            //     ],
-            //   ),
-            // ),
-          ],
+          // children: [
+          //   // Ring image background - right side with low opacity
+          //   Positioned(
+          //     right: 150,
+          //     top: 50,
+          //     bottom: 50,
+          //     child: Opacity(
+          //       opacity: 0.12,
+          //       child: Transform.scale(
+          //         scale: 0.8,
+          //         child: Image.asset(
+          //           'assets/images/ring.png',
+          //           fit: BoxFit.cover,
+          //           errorBuilder: (context, error, stackTrace) {
+          //             return Container(
+          //               color: const Color(0xFFD4AF37).withOpacity(0.1),
+          //               child: const Center(
+          //                 child: Icon(
+          //                   Icons.diamond,
+          //                   size: 100,
+          //                   color: Color(0xFFD4AF37),
+          //                 ),
+          //               ),
+          //             );
+          //           },
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          //   // Skeleton Content
+          //   // SafeArea(
+          //   //   child: Column(
+          //   //     mainAxisAlignment: MainAxisAlignment.center,
+          //   //     children: [
+          //   //       const SizedBox(height: 40),
+          //   //       // Skeleton icon circle
+          //   //       _buildSkeletonShimmer(
+          //   //         child: Container(
+          //   //           height: 160,
+          //   //           width: 160,
+          //   //           decoration: BoxDecoration(
+          //   //             shape: BoxShape.circle,
+          //   //             color: Colors.grey[300],
+          //   //           ),
+          //   //         ),
+          //   //       ),
+          //   //       const SizedBox(height: 50),
+          //   //       // Skeleton text lines
+          //   //       Column(
+          //   //         children: [
+          //   //           _buildSkeletonShimmer(
+          //   //             child: Container(
+          //   //               height: 60,
+          //   //               width: 150,
+          //   //               decoration: BoxDecoration(
+          //   //                 borderRadius: BorderRadius.circular(8),
+          //   //                 color: Colors.grey[300],
+          //   //               ),
+          //   //             ),
+          //   //           ),
+          //   //           const SizedBox(height: 16),
+          //   //           _buildSkeletonShimmer(
+          //   //             child: Container(
+          //   //               height: 12,
+          //   //               width: 100,
+          //   //               decoration: BoxDecoration(
+          //   //                 borderRadius: BorderRadius.circular(6),
+          //   //                 color: Colors.grey[300],
+          //   //               ),
+          //   //             ),
+          //   //           ),
+          //   //           const SizedBox(height: 24),
+          //   //           _buildSkeletonShimmer(
+          //   //             child: Container(
+          //   //               height: 12,
+          //   //               width: 120,
+          //   //               decoration: BoxDecoration(
+          //   //                 borderRadius: BorderRadius.circular(6),
+          //   //                 color: Colors.grey[300],
+          //   //               ),
+          //   //             ),
+          //   //           ),
+          //   //         ],
+          //   //       ),
+          //   //       const Spacer(),
+          //   //       // Skeleton loading animation
+          //   //       _buildSkeletonShimmer(
+          //   //         child: Row(
+          //   //           mainAxisAlignment: MainAxisAlignment.center,
+          //   //           children: List.generate(
+          //   //             3,
+          //   //             (index) => Padding(
+          //   //               padding: const EdgeInsets.symmetric(horizontal: 7),
+          //   //               child: Container(
+          //   //                 width: 8,
+          //   //                 height: 8,
+          //   //                 decoration: BoxDecoration(
+          //   //                   shape: BoxShape.circle,
+          //   //                   color: Colors.grey[300],
+          //   //                 ),
+          //   //               ),
+          //   //             ),
+          //   //           ),
+          //   //         ),
+          //   //       ),
+          //   //       const SizedBox(height: 20),
+          //   //       _buildSkeletonShimmer(
+          //   //         child: Container(
+          //   //           height: 12,
+          //   //           width: 60,
+          //   //           decoration: BoxDecoration(
+          //   //             borderRadius: BorderRadius.circular(6),
+          //   //             color: Colors.grey[300],
+          //   //           ),
+          //   //         ),
+          //   //       ),
+          //   //       const SizedBox(height: 60),
+          //   //     ],
+          //   //   ),
+          //   // ),
+          // ],
         ),
       ),
     );
@@ -259,15 +259,15 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
           children: [
             // Ring image background - right side with low opacity
             Positioned(
-              right: -40,
-              top: -30,
-              bottom: -30,
+              right: -160,
+              top: 80,
+              bottom: 20,
               child: Opacity(
-                opacity: 0.12,
+                opacity: 0.22,
                 child: Transform.scale(
-                  scale: 1.2,
+                  scale: 1.0,
                   child: Image.asset(
-                    '/ring.png',
+                    'assets/images/ring.png',
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
